@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int Power(int number, int power){
+
+  int res = 1;
+  for(int i = 0; i < power; i++)
+  {
+    res *=  number;
+  }
+return res;
+}
+
+int main(void) {
+  int number, power;
+
+  printf("Введите число: ");
+  scanf("%d", &number);
+
+  printf("Введите степень: ");
+  scanf("%d", &power);
+  
+  printf("%d",Power (number, power));
+
+}
