@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int is_simple(long int number) 
+{
+
+  if (number > 1)
+  {
+    for(int i = 2; i < number; i++)
+    {
+
+      if (number % i == 0)
+
+      {
+        return 0;
+      }
+
+    return 1;  
+    }
+  }
+
+  else
+  {
+    printf("Введенное Вами число не является ни составным ни простым.\n");
+  }
+
+return 0;
+}
+
+
+
+
+
+int main(void) {
+  long int number;
+
+  printf("Введите число: ");
+
+  scanf("%li", &number);
+  
+  printf("%d",is_simple(number));
+
+}
