@@ -27,13 +27,14 @@ return 0;
 }
 
 
-int main(void) {
+int main(void)
+{
   
   long int number;
 
   printf("Введите число: ");
   scanf("%li", &number);
   
-  printf("%d",is_simple(number));
+  printf("%d", is_simple(number));
 
 }
