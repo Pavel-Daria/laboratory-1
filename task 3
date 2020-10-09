@@ -1,17 +1,22 @@
 #include <stdio.h>
 
-int Power(int number, int power){
+int power_function(int number, int power)
+{
+  int result = 1;
 
-  int res = 1;
   for(int i = 0; i < power; i++)
   {
-    res *=  number;
+    result *=  number;
   }
-return res;
+
+return result;
+
 }
 
-int main(void) {
-  int number, power;
+int main(void) 
+{
+  int number;
+  int power;
 
   printf("Введите число: ");
   scanf("%d", &number);
@@ -19,6 +24,6 @@ int main(void) {
   printf("Введите степень: ");
   scanf("%d", &power);
   
-  printf("%d",Power (number, power));
+  printf("%d", power_function(number, power));
 
 }
