@@ -29,7 +29,7 @@ int main(void)
 {
   long int number;
 
-  printf("enter the number: ");
+  printf("enter_the_number: ");
   scanf("%li", &number);
   
   printf("%d", is_simple(number));
