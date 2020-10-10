@@ -17,6 +17,7 @@ int is_simple(long int number)
   {
     printf("the_number_you_entered_is_neither_composite_nor_simple.\n");
   }
+  
 return 0;
 }
 
