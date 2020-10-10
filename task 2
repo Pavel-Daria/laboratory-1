@@ -19,7 +19,7 @@ int is_simple(long int number)
 
   else
   {
-    printf("Введенное Вами число не является ни составным ни простым.\n");
+    printf("the_number_you_entered_is_neither_composite_nor_simple.\n");
   }
 
 return 0;
@@ -32,7 +32,7 @@ int main(void)
   
   long int number;
 
-  printf("Введите число: ");
+    printf("enter the number: ");
   scanf("%li", &number);
   
   printf("%d", is_simple(number));
