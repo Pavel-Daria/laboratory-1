@@ -25,15 +25,12 @@ return 0;
 
 }
 
-
 int main(void)
 {
-  
   long int number;
 
   printf("enter the number: ");
   scanf("%li", &number);
   
   printf("%d", is_simple(number));
-
 }
