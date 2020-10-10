@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int power_function(int number, int power)
+int get_power(int number, int power)
 {
   int result = 1;
 
@@ -13,17 +13,19 @@ return result;
 
 }
 
-int main(void) 
+int main() 
 {
   int number;
   int power;
 
-  printf("Введите число: ");
+  printf("enter_a_number: ");
   scanf("%d", &number);
 
-  printf("Введите степень: ");
+  printf("enter_the_degree: ");
   scanf("%d", &power);
   
-  printf("%d", power_function(number, power));
+  printf("%d", get_power(number, power));
+
+  return 0;
 
 }
